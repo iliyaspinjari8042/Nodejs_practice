@@ -26,3 +26,24 @@ console.log(typeof x); // Output: "boolean"
 // let bigInt=12345678998765432n;
 // console.log(typeof bigInt);
 //function typeof is function but its called object Function
+//********************************************************************************************** */
+//stack and Heap memory
+//stack(primitive)  || Heap(non-Primitive)
+// let a=10;
+// let b=a;
+// a=20
+// console.log(a)
+// console.log(b)
+// let first=
+// {
+//     fname:'iliyas',
+//     lname:'pinjari'
+// }
+// let secont=first
+// secont.fname='kasim';
+// console.log(first);
+// console.log(secont);
+// { fname: 'iliyas', lname: 'pinjari' }
+// { fname: 'iliyas', lname: 'pinjari' }
+// { fname: 'kasim', lname: 'pinjari' }
+// { fname: 'kasim', lname: 'pinjari' }
