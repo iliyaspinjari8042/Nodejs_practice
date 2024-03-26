@@ -29,8 +29,9 @@ newArr.shift();//remove element in first
 // console.log('B' ,newArray)//B [ 'iliyas', 'kasim', 'noor', 'sultan', 'salman', 'Touhid' ]
 // console.log(newArray.splice(2,5));//[ 'noor', 'sultan', 'salman', 'Touhid' ]
 // console.log('C' ,newArray)//C [ 'iliyas', 'kasim' ]
-const fruits = ['apple', 'banana', 'orange', 'kiwi'];
-fruits.splice(2, 1, 'lemon'); // Removes 1 element at index 2 and adds 'lemon'
-console.log(fruits); 
+// const fruits = ['apple', 'banana', 'orange', 'kiwi'];
+// fruits.splice(2, 1, 'lemon'); // Removes 1 element at index 2 and adds 'lemon'
+// console.log(fruits); 
+// slice() creates a new array as a shallow copy of a portion of an existing array, while splice() modifies the original array by removing, replacing, or adding elements.
 
 
