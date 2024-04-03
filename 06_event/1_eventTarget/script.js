@@ -15,7 +15,7 @@
 //     },5000)
 //     resolve('cool man')
 // })
-// myPara.then(function(value){console.log(value);})
+// myPara.then(function(value){console.log(value);})  vv
 // console.log('second');
 /****************************************************************** */
 //addEventListener
