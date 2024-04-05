@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>change backgroung color</title>
+  </head>
+  <body>
+    <h1
+      style="
+        color: crimson;
+        font-variant: small-caps;
+        font-size: 50px;
+        text-align: center;
+      "
+    >
+      iliyas
+    </h1>
+    <button
+      class="btn-1"
+      style="
+        padding: 10px 80px;
+        margin: 10px;
+        color: red;
+        font-size: 18px;
+        border-radius: 20px;
+        background-color: lightgreen;
+      "
+    >
+      Start
+    </button>
+    <button
+      class="btn-2"
+      style="
+        padding: 10px 80px;
+        margin: 10px;
+        color: white;
+        font-size: 18px;
+        border-radius: 20px;
+        background-color: lightcoral;
+      "
+    >
+      Stop
+    </button>
+    <script>
+      let inteervalId;
+      const startButton = document.querySelector(".btn-1");
+      const stopButton = document.querySelector(".btn-2");
+      const randomColor = function () {
+        const hex = "0123456789ABCDEF";
+        let color = "#";
+        for (let i = 1; i <= 6; i++) {
+          color += hex[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      };
+      let changeBackground = function () {
+        if (!inteervalId) {
+          inteervalId = setInterval(function () {
+            document.body.style.backgroundColor = randomColor();
+          }, 1000);
+        }
+        stopButton.disabled = false;
+      };
+      
+      startButton.addEventListener("click", changeBackground);
+      stopButton.addEventListener("click", function () {
+        if (inteervalId) {
+          clearInterval(inteervalId);
+        }
+        stopButton.disabled = true;
+        inteervalId=null
+      });
+    </script>
+  </body>
+</html>
