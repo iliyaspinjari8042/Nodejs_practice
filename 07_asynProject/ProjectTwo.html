@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="head">iliyas pinjari</h1>
+    <button id="btm-1" style="padding: 10px 80px; border-radius: 20px; background-color: crimson; font-size: 18px; border: none; color: white; margin-left:10px; cursor: pointer; margin-bottom: 20px;">start</button>
+    <button id="btm-2" style="padding: 10px 80px; border-radius: 20px; background-color: crimson; font-size: 18px; border: none; color: white; margin-left:10px; cursor: pointer;">stop</button>
+    <!-- <script>
+       let intevalId;
+       const startButton=document.querySelector('#btm-1')
+       const stopButton=document.querySelector('#btm-2')
+      startButton.addEventListener('click',function(){
+        if(!intevalId)
+        {
+            intevalId== setInterval(function(str){
+                console.log(`${str} kaise ho ${Date.now}`);
+            },1000,'hellow')
+        }
+        stopButton.disabled=false;
+      })
+      stopButton.addEventListener('click',function(){
+        if(intevalId)
+        {
+            clearInterval(stopButton)
+        }
+        intevalId.disabled=true;
+      })
+      intevalId.disabled=true;
+    </script> -->
+    <script>
+      let inteervalId;
+      let startButton=document.querySelector('#btm-1')
+      let stopButton=document.querySelector('#btm-2')
+      startButton.addEventListener('click',function(){
+        if(!inteervalId)
+        {
+          inteervalId=setInterval(function(str){
+              console.log(str+" "+Date.now())
+          },1000,'magic')
+
+        }
+        stopButton.disabled=false;
+      })
+      stopButton.addEventListener('click',function(){
+        if(inteervalId)
+        {
+          clearInterval(inteervalId)
+        }
+        stopButton.disabled=true;
+        inteervalId=null;
+      })
+      stopButton.disabled=true;
+      </script>
+</body>
+</html>
